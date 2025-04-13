@@ -58,4 +58,4 @@ Essentially, I want to feel at home in a Linux environment—navigating director
 ## Closing Thoughts
 Learning Linux might seem daunting at first, but it’s an investment that pays massive dividends in the world of DevOps. By tackling the goals, topics, and projects outlined above, I’ll be well on my way to a deeper understanding of how Linux systems operate, paving the way for more advanced DevOps skills.
 
-In the next posts, I’ll share my experiences, pitfalls, and solutions as I complete each project. Stay tuned for more on this DevOps learning journey!
+In the next posts, I’ll share my experiences, pitfalls, and solutions as I complete each project. Stay tuned for more on this DevOps learning journey.
