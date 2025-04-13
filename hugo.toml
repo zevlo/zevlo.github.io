@@ -1,0 +1,16 @@
+baseURL = "https://zevlo.github.io"
+languageCode = "en-us"
+title = "Zachary Allen"
+theme = "hugo-PaperMod"
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Index"
+    url = "/archives/"
+    weight = 2
