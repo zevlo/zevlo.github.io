@@ -44,4 +44,3 @@ kramdown:
 exclude:
   - README.md
   - template.html
-  - _drafts/

@@ -142,21 +142,53 @@ article code {
     background-color: #f4f4f4;
     padding: 2px 6px;
     border-radius: 3px;
-    font-family: 'Courier New', monospace;
-    font-size: 1rem;
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, 'Courier New', monospace;
+    font-size: 0.95em;
 }
 
 article pre {
-    background-color: #f4f4f4;
-    padding: 15px;
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 16px 18px;
     border-radius: 5px;
+    border: 1px solid #3b4048;
     overflow-x: auto;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 article pre code {
     background-color: transparent;
     padding: 0;
+    color: inherit;
+    font-size: inherit;
+}
+
+/* Rouge syntax tokens (One Dark palette) */
+article pre .k, article pre .kd, article pre .kn {
+    color: #c678dd;
+}
+
+article pre .nt {
+    color: #e06c75;
+}
+
+article pre .o {
+    color: #56b6c2;
+}
+
+article pre .s1, article pre .s2, article pre .sd {
+    color: #98c379;
+}
+
+article pre .c, article pre .c1 {
+    color: #5c6370;
+    font-style: italic;
+}
+
+article pre .nb, article pre .cm {
+    color: #61afef;
 }
 
 article blockquote {
