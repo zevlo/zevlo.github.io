@@ -117,7 +117,7 @@ main {
 
 .post-item {
     display: grid;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: auto 1fr;
     gap: 60px; /* Increased from 40px to 60px for wider gap between date and title */
     align-items: baseline;
 }
