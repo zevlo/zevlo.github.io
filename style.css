@@ -132,6 +132,7 @@ main {
     text-decoration: none;
     font-size: 1.1rem;
     font-family: 'Courier New', monospace;
+    font-weight: bold;
     position: relative;
 }
 
