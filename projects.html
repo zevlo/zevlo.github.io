@@ -1,53 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Zachary's Blog</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Zachary's Blog</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="posts.html">Posts</a>
-            <a href="projects.html" class="active">Projects</a>
-            <a href="thoughts.html">Thoughts</a>
-        </nav>
-    </header>
+---
+layout: default
+title: Projects
+---
+<section class="project-list">
+    {% for project in site.projects %}
+    <article class="project-item">
+        <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+        <p>{{ project.description | default: project.excerpt }}</p>
+        {% if project.github_url or project.demo_url %}
+        <div class="project-links">
+            {% if project.github_url %}<a href="{{ project.github_url }}" target="_blank">GitHub</a>{% endif %}
+            {% if project.demo_url %}<a href="{{ project.demo_url }}" target="_blank">Live Demo</a>{% endif %}
+        </div>
+        {% endif %}
+    </article>
+    {% endfor %}
 
-    <main>
-        <section class="project-list">
-            <!-- Example project entries - replace with your own -->
-            <article class="project-item">
-                <h2><a href="#">Project Name 1</a></h2>
-                <p>A brief description of what this project does and the technologies used.</p>
-                <div class="project-links">
-                    <a href="#" target="_blank">GitHub</a>
-                    <a href="#" target="_blank">Live Demo</a>
-                </div>
-            </article>
-
-            <article class="project-item">
-                <h2><a href="#">Project Name 2</a></h2>
-                <p>Another cool project you've built. Explain what makes it interesting.</p>
-                <div class="project-links">
-                    <a href="#" target="_blank">GitHub</a>
-                    <a href="#" target="_blank">Live Demo</a>
-                </div>
-            </article>
-
-            <article class="project-item">
-                <h2><a href="#">Project Name 3</a></h2>
-                <p>Yet another awesome project. Share what you learned while building it.</p>
-                <div class="project-links">
-                    <a href="#" target="_blank">GitHub</a>
-                </div>
-            </article>
-
-            <!-- Add more projects here -->
-        </section>
-    </main>
-</body>
-</html>
+    {% if site.projects.size == 0 %}
+    <p>No projects yet. Create your first project in the <code>_projects/</code> directory!</p>
+    {% endif %}
+</section>
