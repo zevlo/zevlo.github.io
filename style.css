@@ -118,13 +118,13 @@ main {
 .post-item {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 60px; /* Increased from 40px to 60px for wider gap between date and title */
+    gap: 80px; /* Increased from 60px to 80px for more space between date and title */
     align-items: baseline;
 }
 
 .post-date {
     color: #78716c;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
 }
 
 .post-title a {
