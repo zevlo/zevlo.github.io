@@ -1,0 +1,229 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f5eed6;
+    color: #2b2b2b;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 60px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #2b2b2b;
+    justify-content: center;
+}
+
+nav a {
+    color: #2b2b2b;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    margin-top: 40px;
+}
+
+/* Home Page - Intro Section */
+.intro {
+    margin-bottom: 40px;
+}
+
+.intro p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.intro strong {
+    font-weight: bold;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.social-links a {
+    color: #2b2b2b;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #666;
+}
+
+/* Posts Page */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.post-date {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.post-title a {
+    color: #2b2b2b;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Courier New', monospace;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Page */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.project-item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-item h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.project-item h2 a {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.project-item h2 a:hover {
+    text-decoration: underline;
+}
+
+.project-item p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-links a {
+    color: #2b2b2b;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 5px 15px;
+    border: 1px solid #2b2b2b;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.project-links a:hover {
+    background-color: #2b2b2b;
+    color: #f5eed6;
+}
+
+/* Thoughts Page */
+.thoughts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.thought-item {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.thought-item:last-child {
+    border-bottom: none;
+}
+
+.thought-date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.thought-content p {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .post-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .post-date {
+        font-size: 0.85rem;
+    }
+}
