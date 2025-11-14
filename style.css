@@ -112,13 +112,13 @@ main {
 .post-list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px; /* Increased from 30px to 50px for more spacing like Mrinal's blog */
 }
 
 .post-item {
     display: grid;
     grid-template-columns: 40% 1fr;
-    gap: 40px;
+    gap: 60px; /* Increased from 40px to 60px for wider gap between date and title */
     align-items: baseline;
 }
 
@@ -131,7 +131,7 @@ main {
     color: #2b2b2b;
     text-decoration: none;
     font-size: 1.1rem;
-    font-family: 'Courier New', monospace;
+    font-family: Georgia, 'Times New Roman', serif;
     position: relative;
 }
 
