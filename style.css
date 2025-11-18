@@ -267,10 +267,22 @@ article blockquote {
 .project-item h2 a {
     color: #2b2b2b;
     text-decoration: none;
+    position: relative;
 }
 
-.project-item h2 a:hover {
-    text-decoration: underline;
+.project-item h2 a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    bottom: -4px;
+    left: 0;
+    transition: width 300ms ease;
+}
+
+.project-item h2 a:hover::after {
+    width: 100%;
 }
 
 .project-item p {
