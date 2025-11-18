@@ -75,6 +75,98 @@ main {
     margin-bottom: 20px;
 }
 
+article h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+article h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+article h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+article h4, article h5, article h6 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+article p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+article ul, article ol {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+article li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+article strong {
+    font-weight: bold;
+}
+
+article em {
+    font-style: italic;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+    display: block;
+}
+
+article code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+article pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+article pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+article blockquote {
+    border-left: 4px solid #2b2b2b;
+    margin: 20px 0;
+    padding-left: 20px;
+    color: #555;
+    font-style: italic;
+}
+
 /* Home Page - Intro Section */
 .intro {
     margin-bottom: 40px;
