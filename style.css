@@ -8,7 +8,7 @@
 body {
     font-family: Georgia, 'Times New Roman', serif;
     background-color: #ffedd4;
-    color: #2b2b2b;
+    color: #000000;
     line-height: 1.6;
     padding: 20px;
     max-width: 60%;
@@ -24,7 +24,7 @@ header h1 {
     font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 20px;
-    color: #1a1a1a;
+    color: #000000;
     text-align: left;
 }
 
@@ -33,12 +33,12 @@ nav {
     display: flex;
     gap: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #2b2b2b;
+    border-bottom: 1px solid #000000;
     justify-content: flex-start;
 }
 
 nav a {
-    color: #2b2b2b;
+    color: #000000;
     text-decoration: none;
     font-size: 1rem;
     position: relative;
@@ -49,7 +49,7 @@ nav a::after {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: #000;
+    background-color: #000000;
     bottom: -4px;
     left: 0;
     transition: width 300ms ease;
@@ -71,7 +71,7 @@ main {
 /* Article/Post Styles */
 .post-meta {
     color: #78716c;
-    font-size: 0.95rem;
+    font-size: 1.0rem;
     margin-bottom: 20px;
 }
 
@@ -80,7 +80,7 @@ article h1 {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 20px;
-    color: #1a1a1a;
+    color: #000000;
 }
 
 article h2 {
@@ -88,7 +88,7 @@ article h2 {
     font-weight: 400;
     margin-top: 35px;
     margin-bottom: 15px;
-    color: #1a1a1a;
+    color: #000000;
 }
 
 article h3 {
@@ -96,7 +96,7 @@ article h3 {
     font-weight: 400;
     margin-top: 30px;
     margin-bottom: 12px;
-    color: #1a1a1a;
+    color: #000000;
 }
 
 article h4, article h5, article h6 {
@@ -104,7 +104,7 @@ article h4, article h5, article h6 {
     font-weight: 400;
     margin-top: 25px;
     margin-bottom: 10px;
-    color: #1a1a1a;
+    color: #000000;
 }
 
 article p {
@@ -120,7 +120,7 @@ article ul, article ol {
 
 article li {
     margin-bottom: 8px;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 article strong {
@@ -186,11 +186,11 @@ article blockquote {
     display: flex;
     gap: 20px;
     padding-top: 20px;
-    border-top: 1px solid #2b2b2b;
+    border-top: 1px solid #000000;
 }
 
 .social-links a {
-    color: #2b2b2b;
+    color: #000000;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.2s;
@@ -220,7 +220,7 @@ article blockquote {
 }
 
 .post-title a {
-    color: #2b2b2b;
+    color: #000000;
     text-decoration: none;
     font-size: 1.1rem;
     font-family: Georgia, 'Times New Roman', serif;
@@ -232,7 +232,7 @@ article blockquote {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: #000;
+    background-color: #000000;
     bottom: -4px;
     left: 0;
     transition: width 300ms ease;
@@ -251,7 +251,7 @@ article blockquote {
 
 .project-item {
     padding-bottom: 40px;
-    border-bottom: 1px solid #2b2b2b;
+    border-bottom: 1px solid #000000;
 }
 
 .project-item:last-child {
@@ -265,7 +265,7 @@ article blockquote {
 }
 
 .project-item h2 a {
-    color: #2b2b2b;
+    color: #000000;
     text-decoration: none;
     position: relative;
 }
@@ -275,7 +275,7 @@ article blockquote {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: #000;
+    background-color: #000000;
     bottom: -4px;
     left: 0;
     transition: width 300ms ease;
@@ -287,7 +287,7 @@ article blockquote {
 
 .project-item p {
     margin-bottom: 15px;
-    color: #2b2b2b;
+    color: #000000;
 }
 
 .project-links {
@@ -296,16 +296,16 @@ article blockquote {
 }
 
 .project-links a {
-    color: #2b2b2b;
+    color: #000000;
     text-decoration: none;
     font-size: 0.95rem;
     padding: 5px 15px;
-    border: 1px solid #2b2b2b;
+    border: 1px solid #000000;
     transition: background-color 0.2s, color 0.2s;
 }
 
 .project-links a:hover {
-    background-color: #2b2b2b;
+    background-color: #000000;
     color: #f5eed6;
 }
 
@@ -318,7 +318,7 @@ article blockquote {
 
 .thought-item {
     padding-bottom: 30px;
-    border-bottom: 1px solid #2b2b2b;
+    border-bottom: 1px solid #000000;
 }
 
 .thought-item:last-child {
@@ -332,9 +332,9 @@ article blockquote {
 }
 
 .thought-content p {
-    color: #444;
-    font-size: 1.05rem;
-    line-height: 1.7;
+    color: #000000;
+    font-size: 1.0rem;
+    line-height: 1.6;
 }
 
 /* Responsive Design */
