@@ -6,33 +6,35 @@
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     background-color: #ffedd4;
     color: #2b2b2b;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 55%;
+    line-height: 1.75;
+    padding: 60px 40px;
+    max-width: 700px;
     margin: 0 auto;
+    font-size: 18px;
 }
 
 /* Header Styles */
 header {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 30px;
     color: #1a1a1a;
     text-align: left;
+    letter-spacing: -0.02em;
 }
 
 /* Navigation Styles */
 nav {
     display: flex;
-    gap: 20px;
-    padding-bottom: 20px;
+    gap: 30px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #2b2b2b;
     justify-content: flex-start;
 }
@@ -40,8 +42,9 @@ nav {
 nav a {
     color: #2b2b2b;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.05rem;
     position: relative;
+    font-weight: 400;
 }
 
 nav a::after {
@@ -60,71 +63,76 @@ nav a:hover::after {
 }
 
 nav a.active {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Main Content */
 main {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 /* Article/Post Styles */
 .post-meta {
     color: #78716c;
-    font-size: 0.95rem;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-bottom: 30px;
 }
 
 article h1 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 600;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #1a1a1a;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
 article h2 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-top: 35px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 20px;
     color: #1a1a1a;
+    letter-spacing: -0.01em;
 }
 
 article h3 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 16px;
     color: #1a1a1a;
 }
 
 article h4, article h5, article h6 {
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 14px;
     color: #1a1a1a;
 }
 
 article p {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
+    margin-bottom: 28px;
+    font-size: 1.1rem;
     line-height: 1.8;
+    color: #2b2b2b;
 }
 
 article ul, article ol {
-    margin-bottom: 20px;
-    margin-left: 30px;
+    margin-bottom: 28px;
+    margin-left: 35px;
 }
 
 article li {
-    margin-bottom: 8px;
-    line-height: 1.7;
+    margin-bottom: 12px;
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
 article strong {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 article em {
@@ -134,66 +142,72 @@ article em {
 article img {
     max-width: 100%;
     height: auto;
-    margin: 30px 0;
+    margin: 40px 0;
     display: block;
 }
 
 article code {
-    background-color: #f4f4f4;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
+    background-color: #f5f5f5;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', 'Source Code Pro', monospace;
+    font-size: 0.9em;
+    color: #d63384;
 }
 
 article pre {
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-radius: 5px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 6px;
     overflow-x: auto;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
+    border: 1px solid #e0e0e0;
 }
 
 article pre code {
     background-color: transparent;
     padding: 0;
+    color: #2b2b2b;
 }
 
 article blockquote {
     border-left: 4px solid #2b2b2b;
-    margin: 20px 0;
-    padding-left: 20px;
+    margin: 30px 0;
+    padding-left: 25px;
     color: #555;
     font-style: italic;
+    font-size: 1.05rem;
 }
 
 /* Home Page - Intro Section */
 .intro {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .intro p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
+    margin-bottom: 24px;
+    font-size: 1.15rem;
+    line-height: 1.8;
 }
 
 .intro strong {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Social Links */
 .social-links {
     display: flex;
-    gap: 20px;
-    padding-top: 20px;
+    gap: 25px;
+    padding-top: 30px;
     border-top: 1px solid #2b2b2b;
 }
 
 .social-links a {
     color: #2b2b2b;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.05rem;
     transition: color 0.2s;
+    font-weight: 400;
 }
 
 .social-links a:hover {
@@ -204,27 +218,29 @@ article blockquote {
 .post-list {
     display: flex;
     flex-direction: column;
-    gap: 50px; /* Increased from 30px to 50px for more spacing like Mrinal's blog */
+    gap: 60px;
 }
 
 .post-item {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 80px; /* Increased from 60px to 80px for more space between date and title */
+    grid-template-columns: 150px 1fr;
+    gap: 40px;
     align-items: baseline;
 }
 
 .post-date {
     color: #78716c;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    white-space: nowrap;
 }
 
 .post-title a {
     color: #2b2b2b;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
     position: relative;
+    line-height: 1.6;
 }
 
 .post-title a::after {
@@ -246,11 +262,11 @@ article blockquote {
 .project-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
 
 .project-item {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     border-bottom: 1px solid #2b2b2b;
 }
 
@@ -259,9 +275,10 @@ article blockquote {
 }
 
 .project-item h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    margin-top: 0;
 }
 
 .project-item h2 a {
@@ -274,22 +291,25 @@ article blockquote {
 }
 
 .project-item p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #2b2b2b;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
 .project-links {
     display: flex;
-    gap: 15px;
+    gap: 18px;
 }
 
 .project-links a {
     color: #2b2b2b;
     text-decoration: none;
-    font-size: 0.95rem;
-    padding: 5px 15px;
+    font-size: 1rem;
+    padding: 8px 18px;
     border: 1px solid #2b2b2b;
     transition: background-color 0.2s, color 0.2s;
+    border-radius: 4px;
 }
 
 .project-links a:hover {
@@ -301,11 +321,11 @@ article blockquote {
 .thoughts-list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
 .thought-item {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     border-bottom: 1px solid #2b2b2b;
 }
 
@@ -315,38 +335,60 @@ article blockquote {
 
 .thought-date {
     color: #78716c;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
+    margin-bottom: 14px;
 }
 
 .thought-content p {
     color: #444;
-    font-size: 1.05rem;
-    line-height: 1.7;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        padding: 15px;
-        max-width: 95%;
+        padding: 40px 20px;
+        max-width: 100%;
+        font-size: 17px;
+    }
+
+    header {
+        margin-bottom: 60px;
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     nav {
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 20px;
+    }
+
+    article h1 {
+        font-size: 2rem;
+    }
+
+    article h2 {
+        font-size: 1.5rem;
+    }
+
+    article h3 {
+        font-size: 1.25rem;
     }
 
     .post-item {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 12px;
     }
 
     .post-date {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
+    }
+
+    .intro p,
+    article p {
+        font-size: 1.05rem;
     }
 }
