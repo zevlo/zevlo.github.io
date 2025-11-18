@@ -134,7 +134,7 @@ article em {
 article img {
     max-width: 100%;
     height: auto;
-    margin: 30px 0;
+    margin: 30px auto;
     display: block;
 }
 
