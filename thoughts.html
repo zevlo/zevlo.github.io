@@ -1,0 +1,19 @@
+---
+layout: default
+title: Thoughts
+---
+<section class="thoughts-list">
+    {% assign sorted_thoughts = site.thoughts | sort: 'date' | reverse %}
+    {% for thought in sorted_thoughts %}
+    <article class="thought-item">
+        <div class="thought-date">{{ thought.date | date: "%-d" }}{% assign day = thought.date | date: "%-d" %}{% if day == "1" or day == "21" or day == "31" %}st{% elsif day == "2" or day == "22" %}nd{% elsif day == "3" or day == "23" %}rd{% else %}th{% endif %} {{ thought.date | date: "%B, %Y" }}</div>
+        <div class="thought-content">
+            {{ thought.content }}
+        </div>
+    </article>
+    {% endfor %}
+
+    {% if sorted_thoughts.size == 0 %}
+    <p>No thoughts yet. Create your first thought in the <code>_thoughts/</code> directory!</p>
+    {% endif %}
+</section>

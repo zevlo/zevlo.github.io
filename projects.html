@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+---
+<section class="project-list">
+    {% for project in site.projects %}
+    <article class="project-item">
+        <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+        <p>{{ project.description | default: project.excerpt }}</p>
+        {% if project.github_url or project.demo_url %}
+        <div class="project-links">
+            {% if project.github_url %}<a href="{{ project.github_url }}" target="_blank">GitHub</a>{% endif %}
+            {% if project.demo_url %}<a href="{{ project.demo_url }}" target="_blank">Live Demo</a>{% endif %}
+        </div>
+        {% endif %}
+    </article>
+    {% endfor %}
+
+    {% if site.projects.size == 0 %}
+    <p>No projects yet. Create your first project in the <code>_projects/</code> directory!</p>
+    {% endif %}
+</section>
