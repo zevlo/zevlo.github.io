@@ -3,13 +3,13 @@ layout: post
 title: "Why DevOps: The Phoenix Project"
 date: 2025-10-20
 ---
-In my last post, I wrote about the Office of Warfighting Advantage and the years I spent helping Navy commands learn faster than their problems could compound. That office anchored the final stretch of a decade supporting the Navy. I closed with a promise: next up, why I chose this path.
+In my last post, I wrote about the Office of Warfighting Advantage (OWA) and the years I spent helping Navy commands learn faster than their problems could compound. That office anchored the final stretch of a decade supporting the Navy. I closed with a promise: next up, why I chose this path.
 
 The honest answer begins with a novel.
 
 In 2013, Gene Kim, Kevin Behr, and George Spafford published *The Phoenix Project*, a business novel that teaches DevOps by embedding it inside a failing company instead of a textbook. It is modeled on Eliyahu Goldratt's manufacturing classic *The Goal*: a plant-floor turnaround story rewritten for information technology.
 
-I expected a book about servers and release pipelines. What I got was a book that kept describing my day job.
+I expected a book about servers and release pipelines. What I received was a book that described the same methods the OWA uses to build a culture of continuous learning and solve complex operational problems.
 
 ## A Business Novel, Not a Textbook
 
@@ -24,8 +24,6 @@ Bill inherits the wreckage. Development and Operations are at war. Security show
 A board member named Erik Reid becomes Bill's mentor, and he refuses to talk about technology. Instead, he treats IT like a factory: there is a value stream, there are bottlenecks, and optimizing one team while starving the whole system is how companies die.
 
 The authors later compressed the entire argument into one sentence: **DevOps is the result of applying Lean principles to the IT value stream.**
-
-That sentence is why this book hit me so hard. Manufacturing floor, Navy command, IT department. Same disciplines, different uniforms.
 
 ## Theory of Constraints: The Hero Is the Problem
 
@@ -45,7 +43,7 @@ Making a non-bottleneck faster does not increase throughput. It just piles more 
 4.  **Elevate** the constraint. Document, automate, pair, get it off the critical path.
 5.  **Repeat**. Inertia will quietly create a new bottleneck.
 
-Sound familiar? I have run this playbook. During a Kaizen engagement with a Naval Special Warfare unit, we spent a week inside their inter-deployment training and maintenance cycle. We mapped where work actually queued, identified the constraint, and restructured the cycle around it. The people, the gear, and the mission stayed the same; the flow of work is what changed.
+I used this playbook during a Kaizen event with Naval Special Warfare. We spent a week inside their inter-deployment training and maintenance cycle. We mapped where work actually queued, identified the constraint, and restructured the cycle around it. The people, the gear, and the mission stayed the same; the flow of work is what changed.
 
 ## WIP: The Silent Killer
 
@@ -56,8 +54,6 @@ WIP is a silent killer because it feels like progress. Every started project fee
 This is why Kanban boards carry explicit **WIP limits** to keep unfinished work from silently drowning the system. Reduce the batch size, finish the work in flight, and cycle times collapse without adding a single person.
 
 The book's counterintuitive lesson became one of my favorite rules: **being able to take needless work out of the system is more important than being able to put more work into it.**
-
-Every organization I have worked with, military and civilian, had more good ideas than capacity. The discipline is subtraction.
 
 ## Unplanned Work: The Capacity Thief
 
@@ -72,8 +68,6 @@ The fourth type is the one that ruins everything. Unplanned work is the most des
 
 The book gives the root cause a name I think about constantly: **technical debt**. Every shortcut, every undocumented system, every "we'll fix it later" is a loan. And debt compounds. If an organization stops paying it down, eventually every calorie in the organization is spent just paying the interest. The interest payments arrive as unplanned work.
 
-In my last post I wrote about **Hero Mode**: teams sprinting and pulling all-nighters just to hold a normal baseline. That is what a system drowning in unplanned work looks like from the inside. It feels like dedication. Structurally, it is insolvency.
-
 ## Systems Thinking: The Goal Is the Whole
 
 All of these ideas roll up into the philosophy Erik hammers from the beginning: **systems thinking**. Always confirming that the entire organization achieves its goal, not just one part of it.
@@ -86,8 +80,6 @@ The book makes this concrete with a definition of IT Operations that could doubl
 
 Notice what that definition says the job is. The job is **flow**: the throughput of the entire system.
 
-The tool that makes the whole system visible is the **value stream map**: every step from business idea to production, every queue, every handoff. In IT, the value stream map has a modern name: the deployment pipeline. Map it once, honestly, and where work actually queues becomes impossible to unsee.
-
 ## Improvement Kata: Getting Better at Getting Better
 
 The last concept closed the loop for me.
@@ -97,21 +89,15 @@ Erik's most counterintuitive claim: **improving daily work is more important tha
 The mechanism is Mike Rother's **Improvement Kata**: short, repeating improvement cycles on a fixed cadence (two weeks of plan, do, check, act), run forever. Small, safe experiments. Blameless learning from failure. **Standard work**, documented, so every improvement compounds into collective knowledge instead of evaporating. The Navy's nuclear propulsion program has run on exactly this logic for decades: rigorous standard work, so the knowledge lives in the system even when the expert transfers.
 
 <div style="display: flex; justify-content: center;">
-    <img src="/assets/images/kata.png">
+    <img src="/assets/images/kata.png" style="margin-top: 5px;">
 </div>
-
-Readers of my last post will recognize all of this immediately. Self-assessment plus self-correction equals continuous improvement. The Improvement Kata is Get Real, Get Better in a factory coat.
 
 The lineage runs from Taiichi Ohno's Toyota factory floor through Steven Spear and Mike Rother's research to Goldratt's constraint math, and, it turns out, through the Office of Warfighting Advantage.
 
-## Same System, Different Uniform
+## Why DevOps
 
 Near the end, the book names its own philosophy, the **Three Ways**: **flow** (optimize the whole system), **feedback** (find problems at the source), and **continual learning and experimentation** (build a culture that can fail small and learn fast). Everything I have described here is one of those three in disguise.
 
-In my last post, I left the Navy carrying two questions: How do you build systems that learn faster than they fail? How do you create environments where people surface problems instead of hiding them?
+In my last post, I asked two questions: How do you build systems that learn faster than they fail? How do you create environments where people surface problems instead of hiding them?
 
 The Phoenix Project was the first place I found those questions being asked about software, and answered with daily practice. DevOps is the discipline of answering them for technology: making work visible, limiting WIP, protecting the constraint, converting unplanned work into signal, and improving the way work improves.
-
-A factory in 1984. A Navy command in 2024. A deployment pipeline tomorrow. Same system, different uniform.
-
-I know which one I'm reporting to next.
