@@ -177,10 +177,6 @@ article blockquote {
     font-size: 1.1rem;
 }
 
-.intro strong {
-    font-weight: bold;
-}
-
 /* Social Links */
 .social-links {
     display: flex;
