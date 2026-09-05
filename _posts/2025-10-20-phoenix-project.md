@@ -2,6 +2,7 @@
 layout: post
 title: "Why DevOps: The Phoenix Project"
 date: 2025-10-20
+image: /assets/images/phoenix-cover.png
 ---
 In my last post, I wrote about the Office of Warfighting Advantage (OWA) and the years I spent helping Navy commands learn faster than their problems could compound. That office anchored the final stretch of a decade supporting the Navy. I closed with a promise: next up, why I chose this path.
 

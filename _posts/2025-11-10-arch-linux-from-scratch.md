@@ -2,6 +2,8 @@
 layout: post
 title: "Arch Linux from Scratch"
 date: 2025-11-10
+description: "What installing Arch Linux from scratch teaches you about how Linux actually boots."
+image: /assets/images/boot-chain.png
 ---
 
 The Unix philosophy is a system design approach that advocates for minimalist, modular software built from small, composable tools that each perform a single task well. Doug McIlroy, who ran the Bell Labs group where Unix grew up, compressed it into a rule that fits on a sticky note: **write programs that do one thing and do it well, and write programs that work together**.
