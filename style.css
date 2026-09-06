@@ -341,28 +341,21 @@ article blockquote {
 .thoughts-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-.thought-item {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #000000;
-}
-
-.thought-item:last-child {
-    border-bottom: none;
-}
-
-.thought-date {
-    color: #78716c;
-    font-size: 1rem;
-    margin-bottom: 10px;
+    gap: 56px;
 }
 
 .thought-content p {
     color: #000000;
     font-size: 1rem;
     line-height: 1.6;
+}
+
+.thought-content p:first-child {
+    font-style: italic;
+}
+
+.thought-content p + p {
+    color: #78716c;
 }
 
 /* Responsive Design */
