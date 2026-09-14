@@ -9,13 +9,21 @@ demo_url: "https://starbase.zevlo.net"
 
 ## About This Project
 
-A live dashboard that counts down to the next rocket launch, flags holds,
-and links to the live webcast. A serverless AWS pipeline polls Launch Library 2
-every ten minutes and stores the results in DynamoDB; the whole system is
-described in one Terraform stack and deploys keylessly via GitHub Actions OIDC.
+Starbase is a live dashboard for upcoming rocket launches. It shows a countdown
+to the next launch, tells you when a launch is on hold and why, and links to
+the live video when one exists. A small JSON API serves the same data for
+anyone who wants to build on it.
 
-Live dashboard: [starbase.zevlo.net](https://starbase.zevlo.net)
+Behind the page, a serverless pipeline on AWS keeps the data fresh. Every ten
+minutes, a scheduled Lambda function asks Launch Library 2 for the next 20
+launches and saves them to DynamoDB. CloudFront serves the dashboard and caches
+API reads for 30 seconds at the edge. A counter in DynamoDB caps upstream
+requests at 12 per hour, under the data source's free limit of 15. The whole
+system lives in one Terraform stack and deploys through GitHub Actions with no
+stored cloud credentials.
+
 Source: [github.com/zevlo/starbase](https://github.com/zevlo/starbase)
+Dashboard: [starbase.zevlo.net](https://starbase.zevlo.net)
 
 ### Technologies Used
 

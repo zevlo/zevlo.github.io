@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 <section class="project-list">
-    {% for project in site.projects %}
+    {% for project in site.projects reversed %}
     <article class="project-item">
         <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
         <p>{{ project.description | default: project.excerpt }}</p>
