@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Starbase"
-date: 2026-09-14
+date: 2026-03-20
 description: "A live dashboard for upcoming rocket launches, backed by a serverless AWS pipeline polling Launch Library 2"
 github_url: "https://github.com/zevlo/starbase"
 demo_url: "https://starbase.zevlo.net"
