@@ -89,10 +89,6 @@ Erik's most counterintuitive claim: **improving daily work is more important tha
 
 The mechanism is Mike Rother's **Improvement Kata**: short, repeating improvement cycles on a fixed cadence (two weeks of plan, do, check, act), run forever. Small, safe experiments. Blameless learning from failure. **Standard work**, documented, so every improvement compounds into collective knowledge instead of evaporating. The Navy's nuclear propulsion program has run on exactly this logic for decades: rigorous standard work, so the knowledge lives in the system even when the expert transfers.
 
-<div style="display: flex; justify-content: center;">
-    <img src="/assets/images/kata.png" style="margin-top: 5px;">
-</div>
-
 The lineage runs from Taiichi Ohno's Toyota factory floor through Steven Spear and Mike Rother's research to Goldratt's constraint math, and, it turns out, through the Office of Warfighting Advantage.
 
 ## Why DevOps
