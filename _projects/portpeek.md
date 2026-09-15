@@ -4,6 +4,7 @@ title: "Portpeek"
 date: 2026-09-14
 description: "A localhost-first TCP port checker: is a service listening on this port?"
 github_url: "https://github.com/zevlo/portpeek"
+demo_url: "https://asciinema.org/a/PzI7I7mjqnLHBtGU"
 ---
 
 ## About This Project
@@ -16,6 +17,7 @@ It scans 127.0.0.1 by default; scanning a remote host takes an explicit
 port is open, so scripts can start a container and wait on it.
 
 Source: [github.com/zevlo/portpeek](https://github.com/zevlo/portpeek)
+Demo: [asciinema.org/a/PzI7I7mjqnLHBtGU](https://asciinema.org/a/PzI7I7mjqnLHBtGU)
 
 ### Technologies Used
 
