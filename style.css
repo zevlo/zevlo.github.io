@@ -158,6 +158,10 @@ article pre {
     font-size: 0.95rem;
 }
 
+article img {
+    border-radius: 5px;
+}
+
 article pre code {
     background-color: transparent;
     padding: 0;
