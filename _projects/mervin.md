@@ -4,6 +4,7 @@ title: "Mervin"
 date: 2026-07-28
 description: "A Unix-pipe AI CLI: pipe text in, get the model's answer back on stdout"
 github_url: "https://github.com/zevlo/mervin"
+demo_url: "https://asciinema.org/a/1erEzlQI45K00nzc"
 ---
 
 ## About This Project
@@ -20,6 +21,7 @@ instruction when no specialized command fits. `usage` adds up what past calls
 cost, from a log kept on your machine.
 
 Source: [github.com/zevlo/mervin](https://github.com/zevlo/mervin)
+Demo: [asciinema.org/a/1erEzlQI45K00nzc](https://asciinema.org/a/1erEzlQI45K00nzc)
 
 ### Technologies Used
 
